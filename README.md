@@ -1,1 +1,11 @@
-MessageAnimator is a versatile Minecraft plugin that enhances your server’s player experience by displaying dynamic and customizable messages.
+## Table of Contents
+
+-   [Summary](#Summary)
+-   [Installation](#Installation)
+-   [Commands](#Commands)
+-   [Configuration](#Configuration)
+-   [Rewards](#Rewards)
+-   [Quest Types](#Objectives)
+-   [Placeholders](#Placeholders)
+-   [Holograms](#Holograms)
+-   [Quest Scheduler](#Quest-Scheduler)
