@@ -67,11 +67,9 @@ BossBarDelay: 6
 BossBarColor: PINK
 BossBarFormat: notched_6
 
-
-
 #ActionBar
 ActionBarEnable: true
-ActionTitle: <gradient:#FE5C2A:#F2C6DE>re playing as %play</gradient><gradient:#F2C6DE:#CF1F2B>er_name%! Have fun!</gradient>
+ActionTitle: <gradient:#FE5C2A:#F2C6DE>re playing as </gradient><gradient:#F2C6DE:#CF1F2B>%player_name%! Have fun!</gradient>
 
 #Sound  please check list https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
 SoundEnable: true
