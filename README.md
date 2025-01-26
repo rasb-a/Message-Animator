@@ -31,7 +31,7 @@ No further configuration needed! **Message Animator** will work out of the box
 ## Commands
 
 /ma reload for the reload a plugin 
-
+permission : messageAnimator.reload
 
 ## Configuration
 ```yaml
