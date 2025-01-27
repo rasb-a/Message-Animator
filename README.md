@@ -6,6 +6,8 @@
 -   [Installation](#Installation)
 -   [Commands](#Commands)
 -   [Configuration](#Configuration)
+-   [Important Notes on Placeholders](#important-notes-on-placeholders)
+-   [Suggestions & Feedback](#suggestions--feedback)
 
 ## Summary
 
@@ -13,39 +15,50 @@ Message Animator is a simple yet powerful plugin that allows you to display dyna
 Compatible from 1.18 to 1.21.4
 ## Features
 
-Custom Chat Messages: Display personalized messages in the chat for various events (e.g., player join, announcements).
-Action Bar Messages: Show messages in the action bar for additional player engagement.
-Boss Bar: Highlight players on login with customizable boss bar messages.
-Title & Subtitle: Display animated titles and subtitles to welcome players or show server events.
-Song Playback: Play custom music when players log in to create a unique experience.
-MiniMessage Support: Easily format messages using MiniMessage from Guardian, with support for rich text, colors, and styles.
+
+- **Custom Chat Messages**: Display personalized and animated messages in the chat for various events (e.g., player join, server announcements).  
+- **Action Bar Messages**: Send engaging messages directly to the action bar.  
+- **Boss Bar Animations**: Highlight players on login with fully customizable boss bars.  
+- **Title & Subtitle**: Display dynamic titles and subtitles for player greetings or events.  
+- **Song Playback**: Play unique sounds or music during player interactions (e.g., login).  
+- **MiniMessage Support**: Use advanced formatting with [MiniMessage](https://docs.advntr.dev/minimessage/format.html) for rich text, gradients, colors, and more.
+
+  
+![Messsage Animator gif (3) (2)](https://github.com/user-attachments/assets/4ce71076-b367-439e-aede-eb6c90b81004)
+
+
 
 ## Installation
 
 1. Download the plugin jar file in [Spigot]() ,[Builtbybit]() or [Polymart]() .
 2. Place it in your server's "plugins" folder.
 3. Restart your server.
-4. Ho no four
-No further configuration needed! **Message Animator** will work out of the box
+4. You're ready to go! **Message Animator** works out of the box with default settings.  
 
 ## Commands
 
-/ma reload for the reload a plugin 
-permission : messageAnimator.reload
+| **Command**        | **Description**                 | **Permission**              |
+|---------------------|---------------------------------|-----------------------------|
+| `/ma reload`       | Reloads the plugin's settings. | `messageAnimator.reload`    |
 
+---
 ## Configuration
+
+Below is the default configuration file for **Message Animator**. Customize it to fit your server's style!
+
+
 ```yaml
 # !-----------------------------------------------------------------------------------------------!
 #                       Welcome to the main configuration of MessageAnimator
 # !-----------------------------------------------------------------------------------------------!
 
 #COLOR CODES are supported with the '&' character.
-#       - For usage, see http://minecraftwiki.net/wiki/Formatting_codes or https://docs.advntr.dev/minimessage/format.html
+#       - For usage, see https://minecraft.tools/fr/color-code.php or https://docs.advntr.dev/minimessage/format.html
 #       - For  message viewver https://www.birdflop.com/resources/rgb/ or https://webui.advntr.dev/
 # -------------------------------------------------------------------------------------------------
 
 #Title Message
-TitleEnable: true
+TitleEnable: true 
 Title: <gradient:#FE5C2A:#CF1F2B>Welecom to (you<gradient:#CF1F2B:#F2C6DE>r serveur name)</gradient>
 SubTitle: <gradient:#CF1F2B:#F2C6DE>Enjoy your stay </gradient><gradient:#F2C6DE:#FE5C2A>, %player_name%</gradient>
 FadeIn: 2
@@ -74,6 +87,36 @@ ActionTitle: <gradient:#FE5C2A:#F2C6DE>re playing as </gradient><gradient:#F2C6D
 #Sound  please check list https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
 SoundEnable: true
 Sound: BLOCK_AMETHYST_BLOCK_HIT
+```
+
+## Important Notes on Placeholders
+
+Important Notes on Placeholders
+Supported placeholders:
+The plugin fully supports placeholders such as %luckperms_prefix%, %player_name%, and more.
+
+Hex color limitations:
+Placeholders containing HEX colors in the &# format (e.g., &#FF5733) are NOT SUPPORTED.
+To use HEX colors, replace the &# prefix with #. For example:
+
+```yaml
+
+Correct: <#FF5733>This is supported</#FF5733>  
+Incorrect: <&#FF5733>This will not work</&#FF5733>
+```
+For advanced placeholders and color customization, visit the [MiniMessage documentation](https://docs.advntr.dev/minimessage/format.html).
+
+
+Example for %luckperms_prefix% with HEX colors 
+
+```yaml
+Modifier
+Message: '<#FF5733>%luckperms_prefix% <#FFFFFF>Welcome, %player_name%!</#FFFFFF>'
+```
+
+## Suggestions & Feedback
+If you have any suggestions, feedback, or feature requests, feel free to open an issue on our GitHub page. We appreciate your input to make **Message Animator** even better!
+
 
 
 
