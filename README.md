@@ -20,7 +20,8 @@ Compatible from 1.18 to 1.21.4
 - **Action Bar Messages**: Send engaging messages directly to the action bar.  
 - **Boss Bar Animations**: Highlight players on login with fully customizable boss bars.  
 - **Title & Subtitle**: Display dynamic titles and subtitles for player greetings or events.  
-- **Song Playback**: Play unique sounds or music during player interactions (e.g., login).  
+- **Song Playback**: Play unique sounds or music during player interactions (e.g., login).
+- **Toast Display**: chose material, style and message
 - **MiniMessage Support**: Use advanced formatting with [MiniMessage](https://docs.advntr.dev/minimessage/format.html) for rich text, gradients, colors, and more.
 
   
@@ -40,6 +41,7 @@ Compatible from 1.18 to 1.21.4
 | **Command**        | **Description**                 | **Permission**              |
 |---------------------|---------------------------------|-----------------------------|
 | `/ma reload`       | Reloads the plugin's settings. | `messageAnimator.reload`    |
+| `/ma preview <all ><title> <message> <bossbar> <actionbar> <toast> <sound> `       | Preview the plugin's settings. | `messageAnimator.preview`    |
 
 ---
 ## Configuration
